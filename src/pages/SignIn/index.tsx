@@ -1,12 +1,12 @@
-import { Checkbox } from "@radix-ui/react-checkbox";
-import { ArrowFatLinesRight, Envelope, Lock } from "phosphor-react";
+import axios from 'axios';
+import { Envelope, Lock } from "phosphor-react";
 import { FormEvent, useState } from "react";
 import { Button } from "../../components/button";
+import { Checkbox } from '../../components/checkbox';
 import { Heading } from "../../components/heading";
 import { Logo } from "../../components/logo";
 import { Text } from "../../components/text";
 import { TextInput } from "../../components/textInput";
-import axios from 'axios'
 
 export function SignIn() {
 
@@ -38,7 +38,7 @@ export function SignIn() {
             </header>
 
             <form onSubmit={handleSignIn} className='flex flex-col gap-4 items-stretch w-full max-w-sm mt-10'>
-                { isUserSignedIn && <Text>Login realizado!</Text>}
+                {isUserSignedIn && <Text>Login realizado!</Text>}
 
                 <label htmlFor="email" className="flex flex-col gap-3">
                     <Text className="font-semibold">Endereço ed e-mail</Text>
@@ -70,6 +70,7 @@ export function SignIn() {
                     <Text size='sm' className="text-gray-200">
                         Lembrar de mim por 30 dias
                     </Text>
+                    <Text size='sm'>doaspodjsaopjd</Text>
                 </label>
 
                 <Button
