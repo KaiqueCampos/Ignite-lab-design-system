@@ -1,12 +1,12 @@
-import { Checkbox } from "@radix-ui/react-checkbox";
-import { ArrowFatLinesRight, Envelope, Lock } from "phosphor-react";
+import { Envelope, Lock } from "phosphor-react";
 import { FormEvent, useState } from "react";
 import { Button } from "../../components/button";
+import { Checkbox } from '../../components/checkbox';
 import { Heading } from "../../components/heading";
 import { Logo } from "../../components/logo";
 import { Text } from "../../components/text";
 import { TextInput } from "../../components/textInput";
-import axios from 'axios'
+import axios from 'axios';
 
 export function SignIn() {
 
