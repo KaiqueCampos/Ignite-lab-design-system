@@ -70,7 +70,6 @@ export function SignIn() {
                     <Text size='sm' className="text-gray-200">
                         Lembrar de mim por 30 dias
                     </Text>
-                    <Text size='sm'>doaspodjsaopjd</Text>
                 </label>
 
                 <Button
