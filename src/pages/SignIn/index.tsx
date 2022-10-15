@@ -25,19 +25,26 @@ export function SignIn() {
 
     return (
         <div className="w-screen h-screen bg-gray-900 flex flex-col items-center justify-center text-gray-100">
-            <header className='flex flex-col  items-center'>
+            <header className='flex flex-col items-center
+                lg:flex-row lg:gap-8
+                2xl:flex-col 2xl:gap-0
+            '>
                 <Logo />
 
-                <Heading size="lg" className="mt-4">
-                    Ignite lab
-                </Heading>
+                <div className='text-center lg:text-left 2xl:text-center'>
+                    <Heading size="lg" className="mt-4">
+                        Ignite lab
+                    </Heading>
 
-                <Text size="lg" className='text-gray-400 mt-1'>
-                    Faça login e comece a usar!
-                </Text>
+                    <Text size="lg" className='text-gray-400 mt-1'>
+                        Faça login e comece a usar!
+                    </Text>
+                </div>
             </header>
 
-            <form onSubmit={handleSignIn} className='flex flex-col gap-4 items-stretch w-full max-w-sm mt-10'>
+            <form onSubmit={handleSignIn} className='flex flex-col gap-4 items-stretch w-full max-w-[340px] mt-10
+                md:max-w-md
+            '>
                 {isUserSignedIn && <Text>Login realizado!</Text>}
 
                 <label htmlFor="email" className="flex flex-col gap-3">
@@ -93,7 +100,6 @@ export function SignIn() {
                     </a>
                 </Text>
             </footer>
-
         </div>
     )
 }
